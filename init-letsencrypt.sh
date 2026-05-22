@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Kiểm tra nếu chưa thay đổi tên miền
-domains=(yourdomain.com www.yourdomain.com) # THAY BẰNG TÊN MIỀN CỦA BẠN
+domains=(nvtcinema.id.vn www.nvtcinema.id.vn) # THAY BẰNG TÊN MIỀN CỦA BẠN
 rsa_key_size=4096
 data_path="./certbot"
-email="your-email@domain.com" # THAY BẰNG EMAIL CỦA BẠN
+email="nguyenvantruong1009204@gmail.com" # THAY BẰNG EMAIL CỦA BẠN
 staging=0 # Set bằng 1 nếu bạn đang test thử nghiệm để tránh bị Let's Encrypt block (rate limit)
 
 if [ -d "$data_path" ]; then
