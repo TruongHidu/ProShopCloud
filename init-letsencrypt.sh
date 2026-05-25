@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Kiểm tra nếu chưa thay đổi tên miền
-domains=(nvtcinema.id.vn www.nvtcinema.id.vn) # THAY BẰNG TÊN MIỀN CỦA BẠN
+domains=(kiottaypos.site www.kiottaypos.site) # THAY BẰNG TÊN MIỀN CỦA BẠN
 rsa_key_size=4096
 data_path="./certbot"
 email="nguyenvantruong1009204@gmail.com" # THAY BẰNG EMAIL CỦA BẠN
