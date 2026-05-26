@@ -20,8 +20,8 @@ services:
       - NODE_ENV=development
       - PORT=5000
       - MONGO_URI=mongodb://database:27017/proshop
-      - JWT_SECRET=mysecretkey12345
-      - PAYPAL_CLIENT_ID=sb
+      - JWT_SECRET=${JWT_SECRET:-mysecretkey12345}
+      - PAYPAL_CLIENT_ID=${PAYPAL_CLIENT_ID:-sb}
     volumes:
       - ./uploads:/app/uploads
     depends_on:

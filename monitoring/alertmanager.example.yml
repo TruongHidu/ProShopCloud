@@ -7,8 +7,8 @@ route:
 receivers:
   - name: 'telegram_bot'
     telegram_configs:
-      - bot_token: "8752858971:AAFQtUe23v3lZfOUa4qomRWnVHCb7y4NFzA"
-        chat_id: 8617345507 # THAY BANG CHAT ID CUA BAN
+      - bot_token: "THAY_BANG_BOT_TOKEN_CUA_BAN"
+        chat_id: 123456789 # THAY BANG CHAT ID CUA BAN
         parse_mode: 'HTML'
         message: |-
           🚨 <b>CẢNH BÁO HỆ THỐNG PROSHOP</b> 🚨
