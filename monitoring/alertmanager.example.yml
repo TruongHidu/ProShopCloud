@@ -15,4 +15,3 @@ receivers:
           <b>Trạng thái:</b> {{ .Status | toUpper }}
           <b>Tên cảnh báo:</b> {{ .GroupLabels.alertname }}
           <b>Mô tả:</b> {{ .CommonAnnotations.description }}
-          <b>Thời gian:</b> {{ .StartsAt }}
