@@ -1,0 +1,11 @@
+groups:
+  - name: HostAlerts
+    rules:
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 85
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Cảnh báo: CPU trên máy chủ quá cao!"
+          description: "Mức sử dụng CPU đang ở mức {{ $value | printf \"%.2f\" }}% trong 2 phút qua."

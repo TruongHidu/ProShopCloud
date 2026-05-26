@@ -1,0 +1,18 @@
+route:
+  receiver: 'telegram_bot'
+  group_wait: 10s
+  group_interval: 5m
+  repeat_interval: 1h
+
+receivers:
+  - name: 'telegram_bot'
+    telegram_configs:
+      - bot_token: "THAY_BANG_BOT_TOKEN_CUA_BAN"
+        chat_id: 123456789 # THAY BANG CHAT ID CUA BAN
+        parse_mode: 'HTML'
+        message: |-
+          🚨 <b>CẢNH BÁO HỆ THỐNG PROSHOP</b> 🚨
+          <b>Trạng thái:</b> {{ .Status | toUpper }}
+          <b>Tên cảnh báo:</b> {{ .GroupLabels.alertname }}
+          <b>Mô tả:</b> {{ .CommonAnnotations.description }}
+          <b>Thời gian:</b> {{ .StartsAt }}
