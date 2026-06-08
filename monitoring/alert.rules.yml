@@ -8,4 +8,4 @@ groups:
           severity: critical
         annotations:
           summary: "Cảnh báo: CPU trên máy chủ quá cao!"
-          description: "Mức sử dụng CPU đang ở mức {{ $value | printf \"%.2f\" }}% trong 2 phút qua."
+          description: "Mức sử dụng CPU đang ở mức {{ $value | printf \"%.2f\" }}% trong 15 giây qua."
