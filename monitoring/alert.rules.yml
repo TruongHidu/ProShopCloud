@@ -2,8 +2,8 @@ groups:
   - name: HostAlerts
     rules:
       - alert: HighCPUUsage
-        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 85
-        for: 2m
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[30s])) * 100) > 85
+        for: 15s
         labels:
           severity: critical
         annotations:
